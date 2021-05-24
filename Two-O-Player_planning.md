@@ -27,24 +27,24 @@
   1. Player class
     - State:
       * lives remain
-      * answer
     - Behavior:
       * loses live
-      * switches game off when no live remain
   2. Question class
     - State:
       * questions
       * answer_keys
     - Behavior:
+      * generating questions
+      * generating answer_keys
       * compares player_answer with answer_keys
-      * prompts question
-      * prompts answers
   3. Game class
     - State:
       * current_player
-      * current lives for both players
+      * current_input
       * game status: on or off
     - Behavior:
       * announces current lives
       * announces winner
-      * switches game on and off 
+      * switches game on and off , switches game off when no live remain
+      * prompts question
+      * prompts answers
